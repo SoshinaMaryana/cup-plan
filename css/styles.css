@@ -7,6 +7,7 @@
 	font-weight: 400;
 	font-style: normal;
 }
+
 body{
 	font-family: 300 20px/1.3 'Lato', sans-serif;
 	background: #fdde7e;
@@ -27,9 +28,20 @@ body{
 	align-content: center;
 	margin: 0 auto;
 	text-align: center;
+	box-shadow: 0 0 10px 0 #999;
+	transition: all .25s;
 }
-.container__gold{
+/*.container__gold{
 	height: 500px;
+}*/
+.container__gold:hover,
+.container__gold.active,
+.container__silver:hover,
+.container__silver.active,
+.container__bronze.active,
+.container__bronze:hover{
+	transform: scale(1.12);
+	box-shadow: 0 0 20px 0 #999;
 }
 .container__prise{
 	display: inline-block;
